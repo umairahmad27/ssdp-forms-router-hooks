@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+// import { AuthContext } from '../../context/AuthContext'
 
 export default function Login() {
+
+    // const { myName, setMyName } = useContext(AuthContext)
 
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("")
@@ -22,6 +25,11 @@ export default function Login() {
     return (
         <div className='py-5'>
             <div className="container">
+                {/* <div className="row mb-3">
+                    <div className="col">
+                        <input type="text" placeholder='Enter your name' className='form-control' defaultValue={myName} onChange={(e) => { setMyName(e.target.value) }} />
+                    </div>
+                </div> */}
                 <div className="row">
                     <div className="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                         <div className="card p-2 p-md-3 p-lg-4">
